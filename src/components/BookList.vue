@@ -5,19 +5,19 @@
       <book-item v-for="book in books" :book="book"></book-item>
     </ul>
     <hr />
-    <book-form4 @addBook="appendBook"></book-form4>
+    <book-form @addBook="appendBook"></book-form>
   </div>
 </template>
 
 <script>
 import BookItem from "./BookItem";
-import BookForm4 from "./BookForm";
+import BookForm from "./BookForm";
 
 export default {
   name: "BookList",
   components: {
     BookItem,
-    BookForm4
+    BookForm
   },
   data() {
     return {
