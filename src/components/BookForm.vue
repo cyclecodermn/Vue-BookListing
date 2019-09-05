@@ -9,7 +9,7 @@
 <script>
 export default {
   name: "BookForm4",
-  props: ["books"],
+  props: ["books7"],
   data() {
     return {
       bookTitle: "",
