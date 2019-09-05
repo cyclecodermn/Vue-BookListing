@@ -2,7 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-      <book-item3 v-for="book in books" :bookItem="book"></book-item3>
+      <book-item v-for="book in books" :bookItem="book"></book-item>
     </ul>
     <hr />
     <book-form4 @addBook="appendBook"></book-form4>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import BookItem3 from "./BookItem";
+import BookItem from "./BookItem";
 import BookForm4 from "./BookForm";
 
 export default {
-  name: "BookList2",
+  name: "BookList",
   components: {
-    BookItem3,
+    BookItem,
     BookForm4
   },
   data() {
